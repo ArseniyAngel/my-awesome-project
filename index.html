@@ -6,25 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Табуретки от Армэна</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-    </style> -->
+
 </head>
 
 <body>
 
     <header class="header">
         <div class="header__logo"><img src="./assets/img/logo.png"></div>
+        <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+        <label for="menu-checkbox" class="menu-btn">
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+        </label>
         <nav class="header__nav nav">
             <ul class="nav__list">
                 <li class="nav__item nav__item--active">
                     <a class="nav__link" href="#">Главная</a>
+                </li>
+                <li class="nav__item nav__item--active">
                     <a class="nav__link" href="#collection">Продукция</a>
+                </li>
+                <li class="nav__item nav__item--active">
                     <a class="nav__link" href="#about">О нас</a>
+                </li>
+                <li class="nav__item nav__item--active">
                     <a class="nav__link" href="#contacts">Контакты</a>
                 </li>
             </ul>
         </nav>
+        <label for="menu-checkbox" class="nav-overlay"></label>
     </header>
     <main>
         <section class="cards">
@@ -46,28 +57,73 @@
                 <img src="./assets/img/Right Image.png">
             </div>
         </section>
-        <section id="about" class="cards">
-            <div class="card card--featured">
-                <h2>Почему &quot;Табуретки от&nbsp;Армэна&nbsp;</h2>
-                <div class="icon-with-text">
-                    <img src="./assets/icons/Delivery.png" alt="Иконка" class="icon">
-                    <span class="text">Предварительные выводы неутешительны: понимание сути ресурсосберегающих
-                        технологий
-                        однозначно фиксирует необходимость переосмысления внешнеэкономических политик.</span>
-                </div>
 
-                <div class="icon-with-text">
-                    <img src="./assets/icons/Delivery.png" alt="Иконка" class="icon">
-                    <span class="text">В&nbsp;частности, современная методология разработки прекрасно подходит для
-                        реализации как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений!</span>
-                </div>
-                <div class="icon-with-text">
-                    <img src="./assets/icons/Delivery.png" alt="Иконка" class="icon">
-                    <span class="text">С&nbsp;учётом сложившейся международной обстановки, внедрение современных методик
-                        требует определения и&nbsp;уточнения кластеризации усилий.</span>
-                </div>
+        <section id="about" class="content-grid">
+            <h2 class="content-grid__title">Почему "Табуретки от Армэна"</h2>
+            <div class="content-grid__container">
+                <article class="content-card">
+                    <div class="icon-with-text">
+                        <img src="./assets/icons/Delivery.png" alt="Иконка" class="icon">
+                        <h3 class="content-card__title">Доставка</h3>
+                        <p class="content-card__text">Предварительные выводы неутешительны: понимание сути
+                            ресурсосберегающих технологий однозначно фиксирует необходимость переосмысления
+                            внешнеэкономических политик.</p>
+                    </div>
+                </article>
+                <article class="content-card">
+                    <div class="icon-with-text">
+                        <img src="./assets/icons/Delivery.png" alt="Иконка" class="icon">
+                        <h3 class="content-card__title">Качество</h3>
+                        <p class="content-card__text">В частности, современная методология разработки прекрасно подходит
+                            для реализации как самодостаточных, так и внешне зависимых концептуальных решений!</p>
+                    </div>
+                </article>
+                <article class="content-card">
+                    <div class="icon-with-text">
+                        <img src="./assets/icons/Delivery.png" alt="Иконка" class="icon">
+                        <h3 class="content-card__title">Инновации</h3>
+                        <p class="content-card__text">С учётом сложившейся международной обстановки, внедрение
+                            современных методик требует определения и уточнения кластеризации усилий.</p>
+                    </div>
+                </article>
+                <article class="content-card">
+                    <div class="icon-with-text">
+                        <img src="./assets/icons/Delivery.png" alt="Иконка" class="icon">
+                        <h3 class="content-card__title">Надежность</h3>
+                        <p class="content-card__text">Мы гарантируем высокое качество продукции и соблюдение сроков
+                            выполнения заказов.</p>
+                    </div>
+                </article>
             </div>
         </section>
+        <!-- <section id="about" class="content-grid">
+            <div class="card card--featured">
+                <h2 class="content-grid__title">Почему &quot;Табуретки от&nbsp;Армэна&nbsp; </h2>
+                <article class="content-card">
+                    <div class="icon-with-text">
+                        <img src="./assets/icons/Delivery.png" alt="Иконка" class="icon">
+                        <span class="text">Предварительные выводы неутешительны: понимание сути ресурсосберегающих
+                            технологий
+                            однозначно фиксирует необходимость переосмысления внешнеэкономических политик.</span>
+                    </div>
+                </article>
+                <article class="content-card">
+                    <div class="icon-with-text">
+                        <img src="./assets/icons/Delivery.png" alt="Иконка" class="icon">
+                        <span class="text">В&nbsp;частности, современная методология разработки прекрасно подходит для
+                            реализации как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений!</span>
+                    </div>
+                </article>
+                <article class="content-card">
+                    <div class="icon-with-text">
+                        <img src="./assets/icons/Delivery.png" alt="Иконка" class="icon">
+                        <span class="text">С&nbsp;учётом сложившейся международной обстановки, внедрение современных
+                            методик
+                            требует определения и&nbsp;уточнения кластеризации усилий.</span>
+                    </div>
+                </article>
+            </div>
+        </section> -->
         <section class="cards" id="collection">
             <div class="card card--featured">
                 <h2>Коллекция Зима-Лето 2026</h2>
