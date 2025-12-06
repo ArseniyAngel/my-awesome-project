@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    font-family: "Lobster", sans-serif;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -97,17 +103,6 @@
     }
 }
 
-/* Подсветка текущего раздела */
-/* .section-highlight {
-    transition: all 0.3s ease;
-}
-
-.section-highlight:hover {
-    border-left: 4px solid #2c5530;
-    padding-left: 1rem;
-} */
-
-/* Интерактивные карточки */
 .card {
     cursor: pointer;
     transition: all 0.3s ease;
@@ -116,4 +111,5 @@
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    background-color: #28292831;
 }
