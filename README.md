@@ -4,3 +4,4 @@
 ## Ссылки
 - [Публичная страница на GitHub Pages](https://arseniyangel.github.io/my-awesome-project/)
 
+![QR-код на страницу](qr.png)
