@@ -13,13 +13,12 @@
 
     <header class="header">
         <div class="header__logo"><img src="./assets/img/logo.png"></div>
-        <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
-        <label for="menu-checkbox" class="menu-btn">
-            <span class="menu-btn__line"></span>
-            <span class="menu-btn__line"></span>
-            <span class="menu-btn__line"></span>
-        </label>
-        <nav class="header__nav nav">
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+        </button>
+        <nav class="header__nav nav" id="mainNav">
             <ul class="nav__list">
                 <li class="nav__item nav__item--active">
                     <a class="nav__link" href="#">Главная</a>
@@ -35,7 +34,6 @@
                 </li>
             </ul>
         </nav>
-        <label for="menu-checkbox" class="nav-overlay"></label>
     </header>
     <main>
         <section class="cards">
@@ -58,7 +56,7 @@
             </div>
         </section>
 
-        <section id="about" class="container">
+        <section id="about" class="container_preim">
             <h2 class="content-grid__title">Почему "Табуретки от Армэна"</h2>
             <div class="content-grid__container_why">
                 <article class="content-card">
@@ -96,7 +94,7 @@
                 </article>
             </div>
         </section>
-        <section class="cards">
+        <section class="cards" id="collection">
             <div class="card card--featured">
                 <h2>Коллекция Зима-Лето 2026</h2>
 
@@ -272,6 +270,10 @@
             <p>&copy; 1880 - 2025 Armen's taburets. Все права защищены.</p>
         </div>
     </footer>
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        ↑
+    </button>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>
